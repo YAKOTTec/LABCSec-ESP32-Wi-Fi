@@ -2,7 +2,7 @@
 Executable MicroPython Code:
 
 Load into microcontroller as:
-HwM__E1.py => main.py
+HwM_E1.py => main.py
 
 Powered by YAKOTT
 """
