@@ -77,6 +77,7 @@ print("  Country: " + network.country())
 #       network.MODE_11G => IEEE 802.11g,
 #       network.MODE_11N => IEEE 802.11n.
 #print("  Mode: " + network.phy_mode())
+print()
 
 # Stablish n conections
 for i in range(1, 255, 1):
