@@ -62,7 +62,7 @@ print()
 print("Device Information")
 # decode() => Encodes the string to bytes using UTF-8 by default
 # hexlify() => Return the hexadecimal representation of the binary data
-print("  MAC Address: " + binascii.hexlify(station.config('mac'), ':').decode())
+print("  MAC Address: " + binascii.hexlify(ap.config('mac'), ':').decode())
 # hostname() => Get or set the hostname that will identify this device on the network
 #   parameter
 #       name => Hostname
@@ -98,11 +98,11 @@ mac_binary = binascii.unhexlify(mac_hexadecimal)
 #       password/'password' => Password
 #       max_clients/'max_clients' => Clients numbers
 #       txpower/'txpower' => TX power in dB
-station.config(mac=mac_binary)
+ap.config(mac=mac_binary)
 network.hostname("Unknown")
 network.country("EC")
 #network.phy_mode(network.MODE_11G))
-print("  MAC Address: " + binascii.hexlify(station.config('mac'), ':').decode())
+print("  MAC Address: " + binascii.hexlify(ap.config('mac'), ':').decode())
 print("  Hostname: " + network.hostname())
 print("  Country: " + network.country())
 #print("  Mode: " + network.phy_mode())
@@ -114,10 +114,10 @@ print("IP Information:")
 #   subnet_mask => Subnet mask
 #   gateway => Gateway
 #   dns_server => DNS server
-print("  IP Address: " + station.ifconfig()[0])
-print("  Subnet Mask: " + station.ifconfig()[1])
-print("  IP Gateway: " + station.ifconfig()[2])
-print("  DNS Server: " + station.ifconfig()[3])
+print("  IP Address: " + ap.ifconfig()[0])
+print("  Subnet Mask: " + ap.ifconfig()[1])
+print("  IP Gateway: " + ap.ifconfig()[2])
+print("  DNS Server: " + ap.ifconfig()[3])
 print()
 
 print("New IP Information:")
