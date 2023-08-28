@@ -77,6 +77,7 @@ print("  Country: " + network.country())
 #       network.MODE_11G => IEEE 802.11g,
 #       network.MODE_11N => IEEE 802.11n.
 #print("  Mode: " + network.phy_mode())
+print()
 
 print("New Device Information")
 # https://gist.github.com/aallan/b4bb86db86079509e6159810ae9bd3e4
