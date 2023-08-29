@@ -51,36 +51,16 @@ print()
 #   network.STA_IF => Station client mode
 station = network.WLAN(network.STA_IF)
 
-# Turn on Wi-Fi
-print("Turn on Wi-Fi")
-# active() => Activate/Deactivate the networt interface
-#   True => Activate
-#   False => Deactivate
-station.active(True)
-print()
-
-print("Device Information")
-# decode() => Encodes the string to bytes using UTF-8 by default
-# hexlify() => Return the hexadecimal representation of the binary data
-print("  MAC Address: " + binascii.hexlify(station.config('mac'), ':').decode())
-# hostname() => Get or set the hostname that will identify this device on the network
-#   parameter
-#       name => Hostname
-print("  Hostname: " + network.hostname())
-# country() => Get or set the two-letter ISO 3166-1 Alpha-2 country code to be used for radio compliance
-#   parameter
-#       code => "EC"
-print("  Country: " + network.country())
-# phy_mode() => Get or set the PHY mode. Only with ESP8266
-#   parameter
-#       network.MODE_11B => IEEE 802.11b,
-#       network.MODE_11G => IEEE 802.11g,
-#       network.MODE_11N => IEEE 802.11n.
-#print("  Mode: " + network.phy_mode())
-print()
-
 # Stablish n conections
 for i in range(1, 255, 1):
+    # Turn on Wi-Fi
+    print("Turn on Wi-Fi")
+    # active() => Activate/Deactivate the networt interface
+    #   True => Activate
+    #   False => Deactivate
+    station.active(True)
+    print()
+    
     print("New Device Information")
     # https://gist.github.com/aallan/b4bb86db86079509e6159810ae9bd3e4
     # Apple, Inc.           18F643000001    Brian's iPhone
@@ -175,7 +155,7 @@ for i in range(1, 255, 1):
     station.disconnect()
     print()
 
-# Turn off Wi-Fi
-print("Turn off Wi-Fi")
-print()
-station.active(False)
+    # Turn off Wi-Fi
+    print("Turn off Wi-Fi")
+    print()
+    station.active(False)
