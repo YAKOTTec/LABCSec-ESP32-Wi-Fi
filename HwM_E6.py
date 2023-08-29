@@ -10,7 +10,7 @@ Powered by YAKOTT
 
 """
 ESP32
-Wi-Fi MAC Flooding Attack
+Wi-Fi DHCP Starvation Attack
 
 https://docs.micropython.org/en/latest/library/network.html
 https://mpython.readthedocs.io/en/latest/library/micropython/network.html
@@ -43,7 +43,7 @@ wait_time_s = 1
 
 
 # Main
-print("Wi-Fi MAC Flooding Attack")
+print("Wi-Fi DHCP Starvation Attack")
 print()
 
 # WLAN() => Instantiate a network interface object
