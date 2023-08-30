@@ -10,7 +10,7 @@ Powered by YAKOTT
 
 """
 ESP32
-Wi-Fi Fake Channel Hopping Access Point
+WLAN Fake Channel Hopping Access Point
 
 https://docs.micropython.org/en/latest/library/network.html
 https://mpython.readthedocs.io/en/latest/library/micropython/network.html
@@ -43,7 +43,7 @@ wait_time_s = 10
 
 
 # Main
-print("Wi-Fi Fake Channel Hopping Access Point")
+print("WLAN Fake Channel Hopping Access Point")
 print()
 
 # WLAN() => Instantiate a network interface object
