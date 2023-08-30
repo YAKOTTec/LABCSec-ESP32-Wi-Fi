@@ -10,7 +10,7 @@ Powered by YAKOTT
 
 """
 ESP32
-Wi-Fi Analyzer 2.4 GHz
+WLAN Analyzer 2.4 GHz
 
 https://docs.micropython.org/en/latest/library/network.html
 https://mpython.readthedocs.io/en/latest/library/micropython/network.html
@@ -39,7 +39,7 @@ import ubinascii as binascii
 
 
 # Main
-print("Wi-Fi Analyzer 2.4 GHz")
+print("WLAN Analyzer 2.4 GHz")
 print()
 
 # WLAN() => Instantiate a network interface object
