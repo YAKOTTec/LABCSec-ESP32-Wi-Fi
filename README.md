@@ -1,4 +1,4 @@
-[**LABCSec: ESP32 WiFi.**]()
+[**LABCSec: WLAN Hacking.**]()
 
 *Micropython v1.20.0*
 
@@ -6,7 +6,7 @@
 
 ...
 
-[**LABCSec: ESP32 WiFi.**]()
+[**LABCSec: WLAN HAcking.**]()
 
 *Micropython v1.20.0*
 
