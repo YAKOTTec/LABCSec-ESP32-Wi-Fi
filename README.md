@@ -1,4 +1,4 @@
-[**LABCSec: WLAN Hacking.**]()
+[**LABCSec: WLAN Hacking with Microcontrollers.**]()
 
 *Micropython v1.20.0, ESP-WROOM-32*
 
@@ -8,7 +8,7 @@
 
 ...
 
-[**LABCSec: WLAN HAcking.**]()
+[**LABCSec: WLAN HAcking with Microcontrollers.**]()
 
 *Micropython v1.20.0, ESP-WROOM-32*
 
